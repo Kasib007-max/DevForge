@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "devforge-toolkit"
+version = "0.1.0"
+description = "A practical developer toolkit for algorithms and everyday engineering utilities."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Kasib Javeed Pasha" }]
+dependencies = []
+
+[project.scripts]
+devforge = "devforge.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["devforge*"]
