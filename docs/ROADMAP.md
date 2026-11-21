@@ -7,7 +7,7 @@ This roadmap is a guide, not a promise that every item will be implemented in on
 - [x] Binary search and linear search
 - [x] Stable merge sort
 - [x] Unit tests for core algorithms
-- [ ] Input parsing and reusable validation helpers
+- [x] Input parsing and reusable validation helpers
 
 ## Phase 2 — Data structures
 - [ ] Stack and queue abstractions

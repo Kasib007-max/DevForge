@@ -5,6 +5,12 @@ from collections.abc import Sequence
 
 from devforge.algorithms.searching import binary_search, linear_search
 from devforge.algorithms.sorting import merge_sort
+from devforge.validation import (
+    InputValidationError,
+    ensure_sorted_ascending,
+    parse_integer,
+    parse_integer_list,
+)
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -15,11 +21,13 @@ def build_parser() -> argparse.ArgumentParser:
     commands = parser.add_subparsers(dest="command", required=True)
 
     sort_parser = commands.add_parser("sort", help="Sort a list of integers.")
-    sort_parser.add_argument("values", nargs="+", type=int)
+    sort_parser.add_argument("values", nargs="+")
 
-    search_parser = commands.add_parser("search", help="Search a sorted integer list.")
-    search_parser.add_argument("target", type=int)
-    search_parser.add_argument("values", nargs="+", type=int)
+    search_parser = commands.add_parser("search", help="Search an integer list.")
+    search_parser.add_argument(
+        "target", type=lambda raw: parse_integer(raw, field="target")
+    )
+    search_parser.add_argument("values", nargs="+")
     search_parser.add_argument(
         "--linear",
         action="store_true",
@@ -29,19 +37,27 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main(argv: Sequence[str] | None = None) -> int:
-    args = build_parser().parse_args(argv)
+    parser = build_parser()
+    args = parser.parse_args(argv)
+
+    try:
+        values = parse_integer_list(args.values)
+    except InputValidationError as exc:
+        parser.error(str(exc))
 
     if args.command == "sort":
-        print(*merge_sort(args.values))
+        print(*merge_sort(values))
         return 0
 
     if args.command == "search":
         if args.linear:
-            index = linear_search(args.values, args.target)
+            index = linear_search(values, args.target)
         else:
-            if args.values != sorted(args.values):
-                raise SystemExit("Binary search requires values in ascending order.")
-            index = binary_search(args.values, args.target)
+            try:
+                ensure_sorted_ascending(values)
+            except InputValidationError as exc:
+                parser.error(str(exc))
+            index = binary_search(values, args.target)
 
         print(index if index >= 0 else "not found")
         return 0
