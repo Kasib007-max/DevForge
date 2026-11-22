@@ -16,12 +16,11 @@ DevForge is a hands-on software engineering workspace focused on implementing us
 
 ## Current milestone
 
-**Milestone 1 — Foundation**
+**Milestone 2 — Linear data structures**
 
-- Establish a consistent Python package structure.
-- Add tested algorithm implementations.
-- Provide a simple command-line interface.
-- Document complexity and usage.
+- Implement reusable stack and queue abstractions.
+- Add tests for LIFO/FIFO behavior, empty structures, and edge cases.
+- Document complexity, behavior, and usage.
 
 ## Quick start
 
@@ -30,16 +29,15 @@ python -m unittest discover -s tests -v
 python -m devforge --help
 ```
 
-No third-party dependencies are required for the initial milestone.
+No third-party dependencies are required for the current features.
 
 ## Repository layout
 
 ```text
 DevForge/
-├── devforge/          # Reusable package and command-line interface
+├── devforge/          # Algorithms, data structures, and CLI
 ├── tests/             # Automated unit tests
 ├── docs/              # Design notes and learning material
-├── examples/          # Small usage examples
 └── README.md
 ```
 
