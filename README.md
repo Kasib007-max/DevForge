@@ -10,17 +10,19 @@ DevForge is a hands-on software engineering workspace focused on implementing us
 |---|---|
 | Algorithms | Sorting, searching, complexity analysis, and reusable implementations |
 | Data structures | Stacks, queues, linked lists, trees, and hash tables |
-| Python utilities | CLI tools, file processing, automation, and validation |
+| Python utilities | Automation scripts, file processing, and validation |
 | Developer tooling | Logging, configuration, testing, and clean project structure |
-| Engineering practice | Documentation, test coverage, CI, and maintainable code |
+| Engineering practice | Documentation, test coverage, and maintainable code |
 
-## Current milestone
+## Current progress
 
-**Milestone 2 — Linear data structures**
+**Phase 2 — Data structures**
 
-- Implement reusable stack and queue abstractions.
-- Add tests for LIFO/FIFO behavior, empty structures, and edge cases.
-- Document complexity, behavior, and usage.
+- [x] Stack and queue abstractions
+- [x] Singly and doubly linked lists
+- [ ] Hash map with collision handling
+- [ ] Binary search tree and traversal algorithms
+- [ ] Heap and priority queue
 
 ## Quick start
 
@@ -35,9 +37,9 @@ No third-party dependencies are required for the current features.
 
 ```text
 DevForge/
-├── devforge/          # Algorithms, data structures, and CLI
+├── devforge/          # Algorithms, data structures, validation, and CLI
 ├── tests/             # Automated unit tests
-├── docs/              # Design notes and learning material
+├── docs/              # Design notes, roadmap, and usage guides
 └── README.md
 ```
 
@@ -51,7 +53,7 @@ DevForge/
 
 ## Status
 
-Early development. Features are added incrementally and documented as they become usable.
+Features are added incrementally. Each completed feature includes tests and documentation before its roadmap item is marked complete.
 
 ---
 Built as a long-term software engineering practice project.
