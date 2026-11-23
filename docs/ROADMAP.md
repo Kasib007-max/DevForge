@@ -11,7 +11,7 @@ This roadmap is a guide, not a promise that every item will be implemented in on
 
 ## Phase 2 — Data structures
 - [x] Stack and queue abstractions
-- [ ] Singly and doubly linked lists
+- [x] Singly and doubly linked lists
 - [ ] Hash map with collision handling
 - [ ] Binary search tree and traversal algorithms
 - [ ] Heap and priority queue
