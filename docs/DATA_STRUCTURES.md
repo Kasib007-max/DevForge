@@ -121,7 +121,7 @@ an `IndexError` subclass.
 | Remove front | — | O(1) | O(1) | O(1) |
 | Remove back | O(1) amortized | — | O(n) | O(1) |
 | Insert / remove by index | — | — | O(n) | O(n) |
-| Search by value | O(n) | O(n) | O(n) | O(n) |
+| Scan / iterate | O(n) | O(n) | O(n) | O(n) |
 | Peek | O(1) | O(1) | O(1) at head | O(1) at head |
 | Length / empty check | O(1) | O(1) | O(1) | O(1) |
 
