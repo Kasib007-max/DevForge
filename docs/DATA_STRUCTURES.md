@@ -92,9 +92,9 @@ history = DoublyLinkedList(["one", "two", "three"])
 history.prepend("zero")
 history.append("four")
 
-print(list(history))          # ['zero', 'one', 'two', 'three', 'four']
+print(list(history))            # ['zero', 'one', 'two', 'three', 'four']
 print(list(reversed(history)))  # ['four', 'three', 'two', 'one', 'zero']
-print(history.pop())          # four
+print(history.pop())            # four
 ```
 
 It supports the same insertion, removal, search, clearing, length, and
@@ -128,3 +128,6 @@ an `IndexError` subclass.
 The stack uses a Python list and the queue uses a deque. The linked lists use
 explicit node objects. These structures are single-threaded and do not provide
 synchronization for concurrent producers or consumers.
+
+For key-value storage using a hash table and separate chaining, see the
+[Hash Map guide](HASH_MAP.md).
