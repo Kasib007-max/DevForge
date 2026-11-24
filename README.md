@@ -9,7 +9,7 @@ DevForge is a hands-on software engineering workspace focused on implementing us
 | Track | Focus |
 |---|---|
 | Algorithms | Sorting, searching, complexity analysis, and reusable implementations |
-| Data structures | Stacks, queues, linked lists, trees, and hash tables |
+| Data structures | Stacks, queues, linked lists, hash maps, trees, and heaps |
 | Python utilities | Automation scripts, file processing, and validation |
 | Developer tooling | Logging, configuration, testing, and clean project structure |
 | Engineering practice | Documentation, test coverage, and maintainable code |
@@ -20,7 +20,7 @@ DevForge is a hands-on software engineering workspace focused on implementing us
 
 - [x] Stack and queue abstractions
 - [x] Singly and doubly linked lists
-- [ ] Hash map with collision handling
+- [x] Hash map with collision handling
 - [ ] Binary search tree and traversal algorithms
 - [ ] Heap and priority queue
 
