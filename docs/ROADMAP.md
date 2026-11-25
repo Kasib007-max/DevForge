@@ -13,7 +13,7 @@ This roadmap is a guide, not a promise that every item will be implemented in on
 - [x] Stack and queue abstractions
 - [x] Singly and doubly linked lists
 - [x] Hash map with collision handling
-- [ ] Binary search tree and traversal algorithms
+- [x] Binary search tree and traversal algorithms
 - [ ] Heap and priority queue
 
 ## Phase 3 — Developer utilities
