@@ -21,7 +21,7 @@ DevForge is a hands-on software engineering workspace focused on implementing us
 - [x] Stack and queue abstractions
 - [x] Singly and doubly linked lists
 - [x] Hash map with collision handling
-- [ ] Binary search tree and traversal algorithms
+- [x] Binary search tree and traversal algorithms
 - [ ] Heap and priority queue
 
 ## Quick start
@@ -56,4 +56,5 @@ DevForge/
 Features are added incrementally. Each completed feature includes tests and documentation before its roadmap item is marked complete.
 
 ---
+
 Built as a long-term software engineering practice project.
