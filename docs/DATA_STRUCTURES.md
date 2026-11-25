@@ -1,8 +1,8 @@
-# Linear Data Structures
+# Data Structures
 
-DevForge provides four generic linear data structures in
-`devforge.data_structures`: a stack, a queue, a singly linked list, and a
-doubly linked list. Each accepts an optional iterable of initial items.
+DevForge provides generic linear data structures in `devforge.data_structures`:
+a stack, a queue, a singly linked list, and a doubly linked list. Each accepts
+an optional iterable of initial items.
 
 ## Stack (LIFO)
 
@@ -129,5 +129,8 @@ The stack uses a Python list and the queue uses a deque. The linked lists use
 explicit node objects. These structures are single-threaded and do not provide
 synchronization for concurrent producers or consumers.
 
-For key-value storage using a hash table and separate chaining, see the
-[Hash Map guide](HASH_MAP.md).
+## Related structures
+
+- [Hash Map](HASH_MAP.md) — key-value storage with separate chaining.
+- [Binary Search Tree](BINARY_SEARCH_TREE.md) — ordered values, search, deletion,
+  and inorder, preorder, and postorder traversal.
