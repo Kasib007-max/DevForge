@@ -14,7 +14,7 @@ This roadmap is a guide, not a promise that every item will be implemented in on
 - [x] Singly and doubly linked lists
 - [x] Hash map with collision handling
 - [x] Binary search tree and traversal algorithms
-- [ ] Heap and priority queue
+- [x] Heap and priority queue
 
 ## Phase 3 — Developer utilities
 - [ ] Structured logging helpers

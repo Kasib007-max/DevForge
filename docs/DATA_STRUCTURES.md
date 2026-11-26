@@ -134,3 +134,5 @@ synchronization for concurrent producers or consumers.
 - [Hash Map](HASH_MAP.md) — key-value storage with separate chaining.
 - [Binary Search Tree](BINARY_SEARCH_TREE.md) — ordered values, search, deletion,
   and inorder, preorder, and postorder traversal.
+- [Binary Heap and Priority Queue](HEAP_AND_PRIORITY_QUEUE.md) — min/max heaps
+  and stable priority-based task scheduling.
