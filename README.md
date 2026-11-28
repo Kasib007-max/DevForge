@@ -11,10 +11,12 @@ DevForge is a hands-on software engineering workspace focused on implementing us
 | Algorithms | Sorting, searching, complexity analysis, and reusable implementations |
 | Data structures | Stacks, queues, linked lists, hash maps, trees, heaps, and priority queues |
 | Python utilities | Automation scripts, file processing, and validation |
-| Developer tooling | Logging, configuration, testing, and clean project structure |
+| Developer tooling | Structured JSON logging, configuration, testing, and clean project structure |
 | Engineering practice | Documentation, test coverage, and maintainable code |
 
 ## Current progress
+
+**Phase 1 — Foundations: complete**
 
 **Phase 2 — Data structures: complete**
 
@@ -24,7 +26,15 @@ DevForge is a hands-on software engineering workspace focused on implementing us
 - [x] Binary search tree and traversal algorithms
 - [x] Heap and priority queue
 
-The next focus is Phase 3: practical developer utilities.
+**Phase 3 — Developer utilities: in progress**
+
+- [x] Structured logging helpers
+- [ ] Configuration loading and validation
+- [ ] File inventory and duplicate detection
+- [ ] Safe batch file operations with dry-run mode
+- [ ] JSON and CSV inspection tools
+
+See [the roadmap](docs/ROADMAP.md) for the complete development plan.
 
 ## Quick start
 
@@ -33,13 +43,16 @@ python -m unittest discover -s tests -v
 python -m devforge --help
 ```
 
+Structured logging is available through `from devforge import configure_logging`.
+See [the logging guide](docs/LOGGING.md) for examples.
+
 No third-party dependencies are required for the current features.
 
 ## Repository layout
 
 ```text
 DevForge/
-├── devforge/          # Algorithms, data structures, validation, and CLI
+├── devforge/          # Algorithms, data structures, validation, and utilities
 ├── tests/             # Automated unit tests
 ├── docs/              # Design notes, roadmap, and usage guides
 └── README.md
