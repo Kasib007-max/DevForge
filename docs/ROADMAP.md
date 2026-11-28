@@ -17,7 +17,7 @@ This roadmap is a guide, not a promise that every item will be implemented in on
 - [x] Heap and priority queue
 
 ## Phase 3 — Developer utilities
-- [ ] Structured logging helpers
+- [x] Structured logging helpers
 - [ ] Configuration loading and validation
 - [ ] File inventory and duplicate detection
 - [ ] Safe batch file operations with dry-run mode
